@@ -14,3 +14,12 @@ jobs:
               with:
                 name: my file
                 path: file.txt
+    content:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get build artifact
+              uses: actions/download-artifact@v4
+              with:
+                name: my file
+            - name: output contents
+              run: ls
