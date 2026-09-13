@@ -15,6 +15,7 @@ jobs:
                 name: my file
                 path: file.txt
     content:
+        needs: yaara
         runs-on: ubuntu-latest
         steps:
             - name: get build artifact
