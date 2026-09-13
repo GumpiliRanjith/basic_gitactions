@@ -1,0 +1,12 @@
+name: wakeup
+
+on: push
+
+jobs:
+    ravi:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello
+              run: |
+                 echo "say hi"
+                 echo "once again"
