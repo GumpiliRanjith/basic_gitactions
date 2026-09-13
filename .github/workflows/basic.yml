@@ -10,3 +10,12 @@ jobs:
               run: |
                  echo "say hi"
                  echo "once again"
+    ranjith:
+        runs-on: ubuntu-latest
+        steps:
+            - name: install repo
+              uses: actions/checkout@v4
+            - name: list out
+              run: ls
+
+    
